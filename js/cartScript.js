@@ -1,0 +1,1 @@
+document.getElementById('cartPage').addEventListener('load', onloadCartPage());

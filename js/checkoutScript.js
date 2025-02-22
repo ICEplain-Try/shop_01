@@ -1,0 +1,1 @@
+document.getElementById('checkoutPage').addEventListener('load', displayOrderSummary());
