@@ -131,7 +131,15 @@ function updateTotalQuantity(){
     const totalQuantityElement = document.getElementById('totalQuantity');
     const totalQuantity = cartItems.reduce((total , item) => total + item.productQuantity , 0);
     console.log(totalQuantity);
+    
+    // Add animation class
+    totalQuantityElement.classList.add('quantity-change');
     totalQuantityElement.textContent = totalQuantity.toFixed(0);
+    
+    // Remove animation class after animation completes
+    setTimeout(() => {
+        totalQuantityElement.classList.remove('quantity-change');
+    }, 300);
 }
 
 
