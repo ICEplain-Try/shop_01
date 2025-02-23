@@ -128,7 +128,7 @@ section {
 .row-img {
     overflow: hidden;
     margin-bottom: 15px;
-    
+    border-radius: 28px;
 }
 
 .row-img img {
@@ -141,7 +141,9 @@ section {
     cursor: pointer;
 }
 
-
+.row-img img:hover {
+    transform: scale(1.1);
+}
 
 .row-in{
     display: flex;
