@@ -137,9 +137,12 @@ section {
     border-radius: 28px;
     aspect-ratio: 6/4;
     object-fit: cover;
-    transition: transform 0.5s;
+    transition: all 0.5s ease;
     cursor: pointer;
 }
+
+
+
 .row-in{
     display: flex;
     align-items: center;
@@ -229,10 +232,11 @@ section {
     font-size: var(--p-font);
     font-weight: 500;
     color: var(--text-color);
+    transition: transform 0.3s ease-out;
 }
-
 .navlist a:hover{
-   transform: translateY(-5px);
+   transform: scale(1.4);
+   color: rgb(49, 49, 252);
 }
 
 .footer{
