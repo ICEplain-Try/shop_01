@@ -9,7 +9,7 @@ function displayProduct(ListProducts, searchResults) {
     ListProducts.forEach(product => {
         const productElement = document.createElement('div');
         productElement.className = "row"
-        productElement.innerHTML = `<div class="row-img"><img src="img/${product.imgPath}.jpg"></div>
+        productElement.innerHTML = `<div class="row-img"><img src="img/${product.imgPath}.jpg" onclick="addToCart(${product.id})"></div>
                                     <h3>${product.name}</h3>
                                     <p>คลัง ${product.quantity}</p>
                                     <div class="row-in">
